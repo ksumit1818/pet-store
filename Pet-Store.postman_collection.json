@@ -1,0 +1,175 @@
+{
+	"id": "29f6bb9c-d448-2a00-e321-681137694042",
+	"name": "Pet-Store",
+	"description": "",
+	"order": [
+		"23f808f2-bd35-84f9-c4fb-dbc1c88c6ec0",
+		"5aa76986-02e0-07f9-28f1-7a4aaab014a9",
+		"afdc7c18-6445-06e3-6772-af33d3688b30",
+		"6f526966-0c75-4bba-99d9-d5f3bc127af5",
+		"86f215e9-b0da-b043-f033-776a3054ed74"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1631967092377,
+	"owner": "16280285",
+	"public": false,
+	"requests": [
+		{
+			"id": "23f808f2-bd35-84f9-c4fb-dbc1c88c6ec0",
+			"headers": "accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/pet/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "29f6bb9c-d448-2a00-e321-681137694042",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Pet",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1631967681331,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{}"
+		},
+		{
+			"id": "5aa76986-02e0-07f9-28f1-7a4aaab014a9",
+			"headers": "accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/store/inventory",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1631967711060,
+			"name": "Get store inventory",
+			"description": "",
+			"collectionId": "29f6bb9c-d448-2a00-e321-681137694042",
+			"responses": [],
+			"rawModeData": "{}"
+		},
+		{
+			"id": "6f526966-0c75-4bba-99d9-d5f3bc127af5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/store/order",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1631971634201,
+			"name": "Post Order To Store",
+			"description": "",
+			"collectionId": "29f6bb9c-d448-2a00-e321-681137694042",
+			"responses": [],
+			"rawModeData": "{\r\n  \"id\": 0,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2021-09-18T12:12:34.927Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": false\r\n}"
+		},
+		{
+			"id": "86f215e9-b0da-b043-f033-776a3054ed74",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/store/order/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "29f6bb9c-d448-2a00-e321-681137694042",
+			"data": null,
+			"dataMode": "params",
+			"name": "Delete Order By Id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1631971280095,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "afdc7c18-6445-06e3-6772-af33d3688b30",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/store/order/11",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "29f6bb9c-d448-2a00-e321-681137694042",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Order By Id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1631970651976,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"id\": 0,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2021-09-18T12:12:34.927Z\",\r\n  \"status\": \"n\",\r\n  \"complete\": true\r\n}"
+		}
+	]
+}

@@ -6,21 +6,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.example.demo.model.Pet;
+
 @RestController
-public class Controller {
-	
+public class PetController {
+
 	@GetMapping("/pet/{petId}")
-	public ResponseEntity<String> getResp(@PathVariable Long petId) {
-		String url="https://virtserver.swaggerhub.com/asd312/temp/1.0.0/pet/1";
+	public Pet getPetResp(@PathVariable Long petId) {
+		String url = "https://virtserver.swaggerhub.com/asd312/temp/1.0.0/pet/1";
 		RestTemplate template = new RestTemplate();
-		ResponseEntity<String> response= template.getForEntity(url, String.class);
-		return response;
+		ResponseEntity<Pet> response = template.getForEntity(url, Pet.class);
+		return response.getBody();
 	}
 	
-	@GetMapping("/hello")
-	public String gethello() {
-		return "Hello";
-	}
-
 }
-
