@@ -20,10 +20,9 @@ public class PetServiceImpl implements PetService {
 		template=new RestTemplate();
 		ResponseEntity<Pet> response=null;
 		
-		template = new RestTemplate();
 //		ResponseEntity<Pet> response = template.getForEntity(url+ petId, Pet.class);
-		response = template.getForEntity(url, Pet.class);
-//		response = template.getForEntity("https://virtserver.swaggerhub.com/asd312/temp/1.0.0/pet/1", Pet.class);
+//		response = template.getForEntity(url, Pet.class);
+		response = template.getForEntity("https://virtserver.swaggerhub.com/asd312/temp/1.0.0/pet/1", Pet.class);
 		return response.getBody();
 	}
 
