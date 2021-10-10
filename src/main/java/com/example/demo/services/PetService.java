@@ -6,4 +6,6 @@ public interface PetService {
 
 	Pet getPetById(Long petId);
 
+	String getMock(String s);
+
 }
